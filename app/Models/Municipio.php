@@ -8,8 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Municipio extends Model
 {
     use HasFactory;
-
-   protected $table = 'tb_municipios';
-   protected $primarykey = 'muni_codi';
-   public $timestamps = false;
+    protected $table = 'tb_municipio';
+    protected $primaryKey = 'muni_codi';
+    public $timestamps = false;
 }
