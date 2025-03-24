@@ -41,5 +41,6 @@
             <button type="submit" class="btn btn-primary">Save</button>
             <a href="{{ route('municipios.index') }}" class="btn btn-warning">Cancel</a>
         </div>  
+</form>
   </body>
 </html>

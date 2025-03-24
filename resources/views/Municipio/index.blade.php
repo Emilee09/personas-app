@@ -30,6 +30,8 @@
                 <td>{{$municipio->muni_nomb}}</td>
                 <td>{{$municipio->depa_codi}}</td>
                 <td>
+                  <a href="{{route('municipio.edit', $municipio->muni_codi)}}"
+                   class="btn btn-info">Edit</a></li>
                     <form action = "{{route('municipio.destroy', $municipio->muni_codi)}}" 
                      method='POST' style = "display:inline-block">
                         @method('DELETE')
