@@ -18,17 +18,18 @@
         <div class="mb-3">
             <label for="id" class="form-label">Code</label>
             <input type="text" class="form-control" id="id" aria-describedby="idHelp" name="id" disabled="disabled">
-            <div id="idHelp" class="form-text">Municipality id</div>
+            <div id="idHelp" class="form-text">Municipality id </div>
         </div>
         <div class="mb-3">
             <label for="name" class="form-label">Municipality</label>
-            <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp"
-            placeholder="commune name">
+            <input type="text" required class="form-control" id="name" name="name" aria-describedby="nameHelp"
+            placeholder="municipio name">
+
         </div>
         <label for="departament">Departament:</label>
         <select class="form-select" id="departament" name="code" required>
             <option selected disabled value="">Choose one...</option>
-            @foreach ($departamentos as $departamentos)
+            @foreach ($departamentos as $departamento)
                 <option value="{{ $departamento->depa_codi }}">{{ $departamento->depa_nomb }}</option>
             @endforeach
         </select>

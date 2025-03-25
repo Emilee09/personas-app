@@ -29,7 +29,7 @@
         <label for="departament">Departament:</label>
         <select class="form-select" id="departament" name="code" required>
             <option selected disabled value="">Choose one...</option>
-            @foreach ($departamentos as $departamentos)
+            @foreach ($departamentos as $departamento)
                 if($departamento->depa_codi == $municipio->depa_codi)
                     <option value="{{ $departamento->depa_codi }}" selected>{{ $departamento->depa_nomb }}</option>
                 else
